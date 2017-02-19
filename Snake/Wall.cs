@@ -10,7 +10,7 @@ namespace Snake
     class Wall
     {
         
-        public char sign = '#';
+        public char sign = '█';
         public List<Point> bricks = new List<Point>();
         public Wall(int level)
         {

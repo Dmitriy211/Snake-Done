@@ -21,9 +21,11 @@ namespace Snake
             {
                 Console.SetCursorPosition(body[i].x, body[i].y);
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
-                Console.Write(sign);                
+                Console.Write(sign);
+                Console.SetCursorPosition(body[body.Count - 1].x, body[body.Count - 1].y);
+                Console.Write("■");
                 Console.SetCursorPosition(body[0].x, body[0].y);
-                Console.Write("☻");
+                Console.Write("☻");                
                 Console.ForegroundColor = ConsoleColor.Gray;
             }
         }
